@@ -3,6 +3,8 @@ package air;
 import products.IProduct;
 import vehicles.IMotorised;
 import vehicles.Vehicle;
+import air.IJet;
+import air.IAirVehicle;
 
 public class Plane extends Vehicle implements IAirVehicle, IMotorised, IJet {
     private String wingType;
@@ -68,4 +70,12 @@ public class Plane extends Vehicle implements IAirVehicle, IMotorised, IJet {
     public void setFuel(int fuel) {
         this.engine.setFuel(fuel);
     }
+
+
+    public String getJetType(){
+        return this.jet.getJetType();
+    }
+    public void setJetType(String jetType){
+            this.setJetType(jetType);
+        }
 }

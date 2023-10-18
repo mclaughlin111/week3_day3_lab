@@ -9,7 +9,7 @@ public class Jet implements IJet {
     }
 
     public String getJetType() {
-        return jetType;
+        return this.jetType;
     }
     public void setJetType(String jetType) {
         this.jetType = jetType;

@@ -1,3 +1,5 @@
+import air.Plane;
+import air.Jet;
 import products.Product;
 import vehicles.Bicycle;
 import vehicles.Car;
@@ -22,5 +24,11 @@ public class Runner {
         System.out.println(kayak.getPrice());
         System.out.println(kayak.getInventory());
 
+
+        Plane plane = new Plane(1000, 5000, new Product(10_000_000, 1, "Tom's plane"), "Big wings", new Engine(1000, 1500), new Jet("Fast jet"));
+        System.out.println(plane.getJetType());
+        System.out.println(plane.getPrice());
+        System.out.println(plane.getFuel());
+        plane.startJet();
     }
 }
